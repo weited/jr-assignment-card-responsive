@@ -1,0 +1,282 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #B1D0E0;
+  min-height: 100vh;
+  padding: 3rem 0 3rem;
+}
+.container::before {
+  content: "";
+  display: table;
+}
+
+@media only screen and (min-width: 320px) {
+  .cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .cards > * {
+    width: 90vw;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .cards > * {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 850px) {
+  .cards {
+    justify-content: space-evenly;
+  }
+
+  .cards > * {
+    padding: 10px;
+    width: 40%;
+  }
+}
+@media only screen and (min-width: 1190px) {
+  .main {
+    display: flex;
+    justify-content: center;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .cards > * {
+    padding: 10px;
+    width: 31%;
+  }
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+/* button and information icon */
+.card__icon--right {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5%;
+  margin-top: 8%;
+}
+
+.btn--country {
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border: 0;
+  border-radius: 4px;
+  color: #ffffff;
+  padding: 3px 18px;
+  text-decoration: none;
+}
+
+.btn--view {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border: none;
+  border-radius: 28px;
+  color: #ffffff;
+  background: #3366ff;
+  padding: 10px 30px;
+  text-decoration: none;
+}
+
+.btn--view:hover {
+  background: #39c;
+  text-decoration: none;
+}
+
+.btn--red {
+  background-color: #c33;
+}
+
+.btn--blue {
+  background-color: #39c;
+}
+
+.btn--white {
+  color: #000;
+  background-color: #fff;
+}
+
+.btn--blue:hover {
+  background: #3cb0fd;
+  text-decoration: none;
+}
+
+.btn--red:hover {
+  background-color: #de3535;
+}
+
+.header {
+  margin: 2rem auto 4rem;
+  text-align: center;
+}
+
+.card-column {
+  display: flex;
+  justify-content: center;
+}
+
+.card__item {
+  background-color: transparent;
+  border-radius: 10px;
+  height: 260px;
+  width: 350px;
+  background-position: center;
+  box-shadow: 0rem 0.25rem 0.8rem 1px rgba(0, 0, 0, 0.25);
+  align-self: flex-start;
+}
+
+/* The first card */
+.card-1 {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  overflow: hidden;
+  background-image: url(../images/bg-7.png);
+  background-size: 100% 100%;
+}
+.card-1 .card__body {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+}
+.card-1 h3 {
+  font-size: 1.1rem;
+  margin: 0.8rem auto 0.3rem;
+}
+.card-1 p {
+  font-size: 0.85rem;
+  margin: 0 auto 0.5rem;
+}
+.card-1 .card__action-icon {
+  margin-top: 20px;
+}
+
+/*  card 2 */
+.card-2 {
+  background-image: url(../images/bg-8.png);
+  background-size: cover;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+.card-2 .play-icon {
+  align-self: center;
+  margin-top: 2.6rem;
+}
+.card-2 .card__body {
+  color: #fff;
+  display: flex;
+  flex-flow: row;
+  gap: 50px;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin-bottom: 2rem;
+}
+.card-2 .card__body .card__action-icon {
+  width: 1.6rem;
+  margin-bottom: -1rem;
+}
+.card-2 h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 15px auto 0;
+}
+.card-2 p {
+  margin-top: 0;
+}
+
+/* card 3 */
+.card-3 {
+  background-image: url(../images/bg-9.png);
+  background-size: 106% 100%;
+  color: #fff;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+.card-3 .card__body {
+  display: flex;
+  flex-flow: row;
+  gap: 50px;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin-bottom: 1.6rem;
+}
+.card-3 .card__body .card__title {
+  font-size: 1.4rem;
+}
+.card-3 .card__body .card__text {
+  font-size: 0.9rem;
+  margin: 0.2rem auto;
+}
+.card-3 .card__body .card__rating {
+  margin-top: 0.5rem;
+}
+.card-3 .card__body .card__rating .rates-icon {
+  width: 18px;
+}
+.card-3 .card__body .card__rating .rates-reviews {
+  float: right;
+  color: #ccc;
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+  margin-left: 0.4rem;
+}
+.card-3 .card__body .card__action-icon {
+  width: 1.6rem;
+  margin-bottom: -1rem;
+}
+
+/* card 4 */
+.card-4 {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  outline: dashed 2px;
+  outline-offset: -20px;
+  text-align: center;
+}
+.card-4 .card__title p {
+  font-size: 1.15rem;
+}
+.card-4 .card__text :first-child {
+  color: #ccc;
+}
+.card-4 .card__text :last-child {
+  color: #36f;
+}
+.card-4 p {
+  margin: 5px auto;
+}
+
+/*# sourceMappingURL=styles.css.map */

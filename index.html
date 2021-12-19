@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Four Cards</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+        <section class="header">
+            <h1>Card Design</h1>
+        </section>
+
+        <main class="main">
+            <!-- cards display area -->
+            <div class="cards">
+                <div class="card-column">
+                    <div class="card__item card-1">
+                        <div class="card__header card__icon--right"><button
+                                class="btn--country btn--blue">SPAIN</button></div>
+                        <div class="card__body">
+                            <div class="card__content">
+                                <h3 class="card__title">Toledo, Spain</h3>
+                                <p class="card__text">Also known as The Imperial City</p>
+                            </div>
+                            <div class="card__action-icon"><img src="images/svg/icon-heart.svg" alt="like icon"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-column">
+                    <div class="card__item card-2">
+                        <div class="card__header card__icon--right"><button class="btn--country btn--red">ITALY</button>
+                        </div>
+                        <img class="play-icon" src="images/svg/icon-combined-shape.svg" alt="icon-combined-shape">
+                        <div class="card__body">
+                            <div class="card__content">
+                                <h3 class="card__title">Boboli Gardens</h3>
+                                <p class="card__text">Florence, Italy</p>
+                            </div>
+                            <img class="card__action-icon" src="images/icon/icons-more-white.png" alt="like icon">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-column">
+                    <div class="card__item card-3">
+                        <div class="card__header card__icon--right"><button class="btn--country btn--red">ITALY</button>
+                        </div>
+                        <div class="card__body">
+                            <div class="card__content">
+                                <h3 class="card__title">Burano Island</h3>
+                                <p class="card__text">Burano, Venice, Italy</p>
+                                <div class="card__rating">
+                                    <span><img class="rates-icon" src="images/icon/icon-star-full.png" alt=""></span>
+                                    <span><img class="rates-icon" src="images/icon/icon-star-full.png" alt=""></span>
+                                    <span><img class="rates-icon" src="images/icon/icon-star-full.png" alt=""></span>
+                                    <span><img class="rates-icon" src="images/icon/icon-star-full.png" alt=""></span>
+                                    <span><img class="rates-icon" src="images/icon/icon-star-empty.png" alt=""></span>
+                                    <p class="rates-reviews">420 reviews</p>
+                                </div>
+                            </div>
+                            <img class="card__action-icon" src="images/icon/icons-more-white.png" alt="like icon">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-column">
+                    <div class="card__item card-4">
+                        <div class="card-upload">
+                            <div class="card__header">
+                                <img src="images/svg/icon-forward.svg" alt="">
+                            </div>
+                            <div class="card__body">
+                                <div class="card__title">
+                                    <p><b>Upload a new trip</b></p>
+                                </div>
+                                <div class="card__text">
+                                    <p>Drag a file to attach or</p>
+                                    <p>browse</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 
+                <div class="card-5">
+                    <div class="card-double">
+                        <div class="card__item card-double__item card-double--left card-country-icon">
+                            <div class="card__header"><button class="btn--country btn--red">ITALY</button></div>
+                            <div class="card__body">
+                                <h3 class="card__title">BURANO ISLAND</h3>
+                                <p class="card__text">November 2017</p>
+                            </div>
+                            <div class="card__footer"><button class="btn btn--view">View Trip </button></div>
+                        </div>
+                        <div class="card__item card-double__item card-double--right">
+                            <div class="card__header"></div>
+                            <div class="card__body">
+                                <img class="card_icon" src="" alt="">
+                                <h3 class="card__title">Places</h3>
+                                <p class="card__text">----</p>
+                            </div>
+                            <div class="card__footer"><button class="btn btn--view">Know more</button></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card__item card-6 card-country-icon">
+                    <div class="card__header card__icon--right"><button class="btn--country btn--red">ITALY</button> </div>
+                    <div class="card__body">
+                        <div class="card__content">
+                            <h3 class="card__title">Venice Islands</h3>
+                            <p class="card__text">Venice is a city in northeastern Italy and the capital of the Veneto
+                                region. It is situated across a group of 118 small island that</p>
+                        </div>
+                        <div class="card__footer"><button class="btn btn--view">View More</button></div>
+                    </div>
+                </div>
+
+                <div class="card__item card-7 card-country-icon">
+                    <div class="card__header card__icon--right"><button class="btn--country btn--white">ITALY</button></div>
+                    <div class="card__body">
+                        <div class="card__content">
+                            <p class="card__subtitle">November 2017</p>
+                            <h2 class="card__title">Florence, Italy</h2>
+                        </div>
+                        <div class="card__view"><button class="btn--view">View trip</button></div>
+                    </div>
+                </div>
+
+                <div class="card__item card-8">
+                    <div class="card__header card__icon--left"><button class="btn--country btn--red">ITALY</button></div>
+                    <div class="card__body">
+                        <div class="card__content">
+                            <h2 class="card__title"></h2>
+                            <p class="card__text"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card__item card-9">
+                    <div class="card__header card__icon--left"><button class="btn--country btn--red">VATICAN</button></div>
+                    <div class="card__body">
+                        <div class="card__content">
+                            <h2 class="card__title"></h2>
+                            <p class="card__text"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card__item card-10">
+                    <div class="card__header"><button></button></div>
+                    <div class="card__body">
+                        <div class="card__content">
+                            <h2 class="card__title"></h2>
+                            <p class="card__text"></p>
+                        </div>
+                        <div class="card__view"><button class="btn--view">View trip</button></div>
+                    </div>
+                </div>
+
+                <div class="card__item card-11">
+                    <div class="card__header"><button></button></div>
+                    <div class="card__body">
+                        <div class="card__content">
+                            <h2 class="card__title"></h2>
+                            <p class="card__text"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card__item card-12">
+                    <div class="card__header"><button></button></div>
+                    <div class="card__body">
+                        <div class="card__content">
+                            <h2 class="card__title"></h2>
+                            <p class="card__text"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card__item card-13">
+                    <div class="card__header"><button></button></div>
+                    <div class="card__body">
+                        <div class="card__content">
+                            <h2 class="card__title"></h2>
+                            <p class="card__text"></p>
+                        </div>
+                    </div>
+                </div>
+                 -->
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
