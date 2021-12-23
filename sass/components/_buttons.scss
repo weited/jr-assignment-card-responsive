@@ -9,30 +9,30 @@
 }
 
 .btn--country {
-    -webkit-border-radius: 6;
-    -moz-border-radius: 6;
     border: 0;
     border-radius: 4px;
-    color: #ffffff;
     padding: 3px 18px;
     text-decoration: none;
+    a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
 }
 
 
 .btn--view {
-    -webkit-border-radius: 28;
-    -moz-border-radius: 28;
     border: none;
     border-radius: 28px;
     color: #ffffff;
     background: #3366ff;
     padding: 10px 30px;
     text-decoration: none;
-}
+    &:hover {
+        background: #39c;
+        text-decoration: none;
+    }
 
-.btn--view:hover {
-    background: #39c;
-    text-decoration: none;
 }
 
 .btn--red {

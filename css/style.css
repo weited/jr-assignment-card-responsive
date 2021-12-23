@@ -85,18 +85,17 @@ h3 {
 }
 
 .btn--country {
-  -webkit-border-radius: 6;
-  -moz-border-radius: 6;
   border: 0;
   border-radius: 4px;
-  color: #ffffff;
   padding: 3px 18px;
+  text-decoration: none;
+}
+.btn--country a {
+  color: #ffffff;
   text-decoration: none;
 }
 
 .btn--view {
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
   border: none;
   border-radius: 28px;
   color: #ffffff;
@@ -104,7 +103,6 @@ h3 {
   padding: 10px 30px;
   text-decoration: none;
 }
-
 .btn--view:hover {
   background: #39c;
   text-decoration: none;
@@ -176,6 +174,17 @@ h3 {
 }
 .card-1 .card__action-icon {
   margin-top: 20px;
+}
+.card-1 .card__action-icon .card__like-icon:hover {
+  transition: transform 0.5s;
+  transform: translateY(-0.1rem) scale(1.05);
+}
+.card-1 .card__action-icon .card__like-icon:active {
+  transition: transform 0.5s;
+  transform: translateY(0) scale(1.02);
+}
+.card-1 .card__action-icon .like-icon--pressed {
+  filter: invert(23%) sepia(73%) saturate(6572%) hue-rotate(358deg) brightness(98%) contrast(117%);
 }
 
 /*  card 2 */
@@ -279,4 +288,4 @@ h3 {
   margin: 5px auto;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=style.css.map */

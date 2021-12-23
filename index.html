@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -25,21 +25,26 @@
             <div class="cards">
                 <div class="card-column">
                     <div class="card__item card-1">
-                        <div class="card__header card__icon--right"><button
-                                class="btn--country btn--blue">SPAIN</button></div>
+                        <div class="card__header card__icon--right">
+                            <!--  Q: Do I need button here? -->
+                            <button class="btn--country btn--blue">
+                                <a href="#">SPAIN</a>
+                            </button>
+                        </div>
                         <div class="card__body">
                             <div class="card__content">
                                 <h3 class="card__title">Toledo, Spain</h3>
                                 <p class="card__text">Also known as The Imperial City</p>
                             </div>
-                            <div class="card__action-icon"><img src="images/svg/icon-heart.svg" alt="like icon"></div>
+                            <!-- DIV ??    -->
+                            <div class="card__action-icon"><img onclick="pressLike()" id="heart-like-icon" class="card__like-icon" src="images/svg/icon-heart.svg" alt="like icon"></div>
                         </div>
                     </div>
                 </div>
 
                 <div class="card-column">
                     <div class="card__item card-2">
-                        <div class="card__header card__icon--right"><button class="btn--country btn--red">ITALY</button>
+                        <div class="card__header card__icon--right"><button class="btn--country btn--red"><a href="">ITALY</a></button>
                         </div>
                         <img class="play-icon" src="images/svg/icon-combined-shape.svg" alt="icon-combined-shape">
                         <div class="card__body">
@@ -47,14 +52,15 @@
                                 <h3 class="card__title">Boboli Gardens</h3>
                                 <p class="card__text">Florence, Italy</p>
                             </div>
-                            <img class="card__action-icon" src="images/icon/icons-more-white.png" alt="like icon">
+                            <a href=""><img class="card__action-icon" src="images/icon/icons-more-white.png" alt="view more"></a>
+                            
                         </div>
                     </div>
                 </div>
 
                 <div class="card-column">
                     <div class="card__item card-3">
-                        <div class="card__header card__icon--right"><button class="btn--country btn--red">ITALY</button>
+                        <div class="card__header card__icon--right"><button class="btn--country btn--red"><a href="">ITALY</a></button>
                         </div>
                         <div class="card__body">
                             <div class="card__content">
@@ -69,7 +75,8 @@
                                     <p class="rates-reviews">420 reviews</p>
                                 </div>
                             </div>
-                            <img class="card__action-icon" src="images/icon/icons-more-white.png" alt="like icon">
+                            <a href=""><img class="card__action-icon" src="images/icon/icons-more-white.png" alt="view more"></a>
+                            
                         </div>
                     </div>
                 </div>
@@ -202,6 +209,12 @@
             </div>
         </main>
     </div>
+
+    <script>
+        function pressLike() {
+          document.getElementById("heart-like-icon").classList.toggle("like-icon--pressed");
+        }
+        </script>
 </body>
 
 </html>
